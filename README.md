@@ -21,5 +21,8 @@ https://github.com/imobile-maio/maio-iOS-SDK/wiki/Get-Started
 ## API Reference
 https://github.com/imobile-maio/maio-iOS-SDK/wiki/API-Reference
 
+## FAQ
+https://github.com/imobile-maio/maio-iOS-SDK/wiki/FAQ
+
 ## Contact Us
 https://maio.jp/#contactWrap
