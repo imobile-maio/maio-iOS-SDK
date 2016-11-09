@@ -1,9 +1,9 @@
 ![](https://github.com/imobile-maio/maio-iOS-SDK/blob/wiki/doc/images/logo.png)
 
 # maio iOS SDK
-- SDK Version: 1.1.6
-- Released: 2016/08/25
-- 対応 iOS Version: 6.0 以降
+- Version: 1.1.7
+- Released: 2016/11/09
+- Supported: iOS 6.0+
 
 ## What is maio?
 [maio](https://maio.jp/) はこれまでのバナー広告に加え、新たな広告収益の機会を得ることが可能な動画広告プラットフォームです。  
@@ -13,16 +13,16 @@
 今までユーザーが離脱していたポイントに `動画広告 + リワード` を入れる事で、ユーザーのストレスを解消しアクティブ率を向上させる事も可能です。  
 
 ## Download
-maio パートナーページから SDK をダウンロードできます。
+[releases](https://github.com/imobile-maio/maio-iOS-SDK/releases) から最新のリリースバージョンをダウンロードして下さい。
 
 ## Get Started
-https://github.com/imobile-maio/maio-iOS-SDK/wiki/Get-Started 
+[wiki/Get-Started](https://github.com/imobile-maio/maio-iOS-SDK/wiki/Get-Started)
 
 ## API Reference
-https://github.com/imobile-maio/maio-iOS-SDK/wiki/API-Reference
+[wiki/API-Reference](https://github.com/imobile-maio/maio-iOS-SDK/wiki/API-Reference)
 
 ## FAQ
-https://github.com/imobile-maio/maio-iOS-SDK/wiki/FAQ
+[wiki/FAQ](https://github.com/imobile-maio/maio-iOS-SDK/wiki/FAQ)
 
 ## Contact Us
 - General
