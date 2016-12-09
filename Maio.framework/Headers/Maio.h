@@ -9,6 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <StoreKit/StoreKit.h>
 #import <sys/sysctl.h>
 #if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_5_0
 #import <AdSupport/AdSupport.h> // idfaの取得 用
