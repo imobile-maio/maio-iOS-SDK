@@ -2,9 +2,9 @@
 
 echo "Start Maio.framework pdate script."
 
-readonly root=$(cd $(dirname $0)/.. && pwd)
-readonly framework="$root/Maio.framework"
-echo "root: $root"
+readonly ROOT=$(cd $(dirname $0)/.. && pwd)
+readonly FRAMEWORK="$ROOT/Maio.framework"
+echo "root: $ROOT"
 
 # 引数からMaio.frameworkを持ってくる
 
@@ -20,18 +20,18 @@ if ! [ -d $1 ] || ! [ -f $1/Info.plist ]  ; then
     exit 1
 fi
 
-rm -rf $framework
-if ! cp -af $1 $framework; then
+rm -rf $FRAMEWORK
+if ! cp -af $1 $FRAMEWORK; then
     echo "copy failded" 1>&2
     # Maio.frameworkをリカバリーする
-    $(cd $root && git checkout -- $framework)
+    $(cd $ROOT && git checkout -- $FRAMEWORK)
     exit 1
 fi
 
 # 差分があるか確認する
-$(cd $root && git add Maio.framework)
-readonly diff_filenames=$(cd $root && git diff --cached --name-only)
-if [ $(cd $root && git diff --cached --name-only | wc -l) -eq 0 ]; then
+$(cd $ROOT && git add $FRAMEWORK)
+readonly DIFF_FILENAMES=$(cd $ROOT && git diff --cached --name-only $FRAMEWORK)
+if [ -z $DIFF_FILENAMES ]; then
     echo "変更はありません"
     exit 0
 fi
