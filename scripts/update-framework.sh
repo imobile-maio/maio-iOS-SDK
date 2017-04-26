@@ -27,4 +27,13 @@ if ! cp -af $1 $framework; then
     $(cd $root && git checkout -- $framework)
     exit 1
 fi
+
+# 差分があるか確認する
+$(cd $root && git add Maio.framework)
+readonly diff_filenames=$(cd $root && git diff --cached --name-only)
+if [ $(cd $root && git diff --cached --name-only | wc -l) -eq 0 ]; then
+    echo "変更はありません"
+    exit 0
+fi
+
 exit 0
