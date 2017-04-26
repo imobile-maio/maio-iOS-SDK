@@ -19,4 +19,11 @@ if ! [ -d $1 ] || ! [ -f $1/Info.plist ]  ; then
     exit 1
 fi
 
+rm -rf $root/Maio.framework
+if ! cp -af $1 $root/Maio.framework; then
+    echo "copy failded" 1>&2
+    # Maio.frameworkをリカバリーする
+    $(cd $root && git checkout -- $root/Maio.framework)
+    exit 1
+fi
 exit 0
