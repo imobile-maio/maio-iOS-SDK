@@ -3,6 +3,7 @@
 echo "Start Maio.framework pdate script."
 
 readonly root=$(cd $(dirname $0)/.. && pwd)
+readonly framework="$root/Maio.framework"
 echo "root: $root"
 
 # 引数からMaio.frameworkを持ってくる
@@ -19,11 +20,11 @@ if ! [ -d $1 ] || ! [ -f $1/Info.plist ]  ; then
     exit 1
 fi
 
-rm -rf $root/Maio.framework
-if ! cp -af $1 $root/Maio.framework; then
+rm -rf $framework
+if ! cp -af $1 $framework; then
     echo "copy failded" 1>&2
     # Maio.frameworkをリカバリーする
-    $(cd $root && git checkout -- $root/Maio.framework)
+    $(cd $root && git checkout -- $framework)
     exit 1
 fi
 exit 0
