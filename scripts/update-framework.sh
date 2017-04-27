@@ -36,4 +36,7 @@ if [ -z $DIFF_FILENAMES ]; then
     exit 0
 fi
 
+echo "差分のあるファイル名を列挙します。"
+echo $DIFF_FILENAMES
+
 exit 0
