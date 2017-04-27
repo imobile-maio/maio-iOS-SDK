@@ -24,7 +24,7 @@ rm -rf $FRAMEWORK
 if ! cp -af $1 $FRAMEWORK; then
     echo "copy failded" 1>&2
     # Maio.frameworkをリカバリーする
-    $(cd $ROOT && git checkout -- $FRAMEWORK)
+    echo $(cd $ROOT && git checkout -- $FRAMEWORK)
     exit 1
 fi
 
@@ -51,7 +51,7 @@ if [ "$key" != "y" ]; then
     # Maio.frameworkをリカバリーする
     echo $(cd $ROOT && git reset HEAD $DIFF_FILENAMES) > /dev/null
     rm -rf $FRAMEWORK
-    $(cd $ROOT && git checkout -- $FRAMEWORK)
+    echo $(cd $ROOT && git checkout -- $FRAMEWORK)
 fi
 
 exit 0
