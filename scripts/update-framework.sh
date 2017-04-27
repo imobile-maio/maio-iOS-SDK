@@ -39,4 +39,11 @@ fi
 echo "差分のあるファイル名を列挙します。"
 echo $DIFF_FILENAMES
 
+echo "コミットしてよろしいですか？(y/N)"
+read key
+while [ -z $key ]
+do
+    read key
+done
+
 exit 0
