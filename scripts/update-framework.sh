@@ -52,6 +52,7 @@ if [ "$key" != "y" ]; then
     echo $(cd $ROOT && git reset HEAD $DIFF_FILENAMES) > /dev/null
     rm -rf $FRAMEWORK
     echo $(cd $ROOT && git checkout -- $FRAMEWORK)
+    echo 0
 fi
 
 exit 0
