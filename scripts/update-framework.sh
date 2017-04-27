@@ -39,6 +39,14 @@ fi
 echo "差分のあるファイル名を列挙します。"
 echo $DIFF_FILENAMES
 
+# バージョン番号更新チェック
+## 現行タグから最新バージョン番号を取得
+readonly LATEST_VERSION=$(git tag | sort -t. -k 1.2,1n -k 2,2n -k 3,3n |tail -1)
+echo "latest: $LATEST_VERSION"
+
+readonly TARGET_VERSION="v$(plutil -p $FRAMEWORK/Info.plist | grep "CFBundleShortVersionString" | sed -e "s/[^0-9.]//g")"
+echo "target: $TARGET_VERSION"
+
 echo "コミットしてよろしいですか？(y/N)"
 read key
 while [ -z $key ]
