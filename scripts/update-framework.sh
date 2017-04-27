@@ -46,4 +46,12 @@ do
     read key
 done
 
+if [ "$key" != "y" ]; then
+    echo "終了します。"
+    # Maio.frameworkをリカバリーする
+    echo $(cd $ROOT && git reset HEAD $DIFF_FILENAMES) > /dev/null
+    rm -rf $FRAMEWORK
+    $(cd $ROOT && git checkout -- $FRAMEWORK)
+fi
+
 exit 0
