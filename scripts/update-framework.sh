@@ -47,6 +47,19 @@ echo "latest: $LATEST_VERSION"
 readonly TARGET_VERSION="v$(plutil -p $FRAMEWORK/Info.plist | grep "CFBundleShortVersionString" | sed -e "s/[^0-9.]//g")"
 echo "target: $TARGET_VERSION"
 
+readonly HIGHER_VERSION=$(for v in $LATEST_VERSION $TARGET_VERSION; do echo "$v"; done | sort -t. -k 1.2,1n -k 2,2n -k 3,3n |tail -1)
+echo "higher: $HIGHER_VERSION"
+
+if [ $LATEST_VERSION == $TARGET_VERSION ] || 
+   [ $HIGHER_VERSION != $TARGET_VERSION ]; then
+    echo "バージョン番号を更新する必要があります。" 1>&2
+    # Maio.frameworkをリカバリーする
+    echo $(cd $ROOT && git reset HEAD $DIFF_FILENAMES) > /dev/null
+    rm -rf $FRAMEWORK
+    echo $(cd $ROOT && git checkout -- $FRAMEWORK)
+    exit 1
+fi
+
 echo "コミットしてよろしいですか？(y/N)"
 read key
 while [ -z $key ]
