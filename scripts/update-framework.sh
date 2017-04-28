@@ -50,7 +50,7 @@ echo "target: $TARGET_VERSION"
 readonly HIGHER_VERSION=$(for v in $LATEST_VERSION $TARGET_VERSION; do echo "$v"; done | sort -t. -k 1.2,1n -k 2,2n -k 3,3n |tail -1)
 echo "higher: $HIGHER_VERSION"
 
-if [ $LATEST_VERSION == $TARGET_VERSION ] || 
+if [ $LATEST_VERSION == $TARGET_VERSION ] ||
    [ $HIGHER_VERSION != $TARGET_VERSION ]; then
     echo "バージョン番号を更新する必要があります。" 1>&2
     # Maio.frameworkをリカバリーする
@@ -75,5 +75,7 @@ if [ "$key" != "y" ]; then
     echo $(cd $ROOT && git checkout -- $FRAMEWORK)
     echo 0
 fi
+
+
 
 exit 0
