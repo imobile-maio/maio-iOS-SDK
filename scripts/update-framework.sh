@@ -31,7 +31,7 @@ fi
 # 差分があるか確認する
 $(cd $ROOT && git add $FRAMEWORK)
 readonly DIFF_FILENAMES=$(cd $ROOT && git diff --cached --name-only $FRAMEWORK)
-if [ -z $DIFF_FILENAMES ]; then
+if [ -z "$DIFF_FILENAMES" ]; then
     echo "変更はありません"
     exit 0
 fi
