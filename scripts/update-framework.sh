@@ -125,4 +125,7 @@ cat $tmprelease > $ROOT/release-notes.md
 echo $(cd $ROOT && git add $ROOT/release-notes.md) > /dev/null
 echo $(cd $ROOT && git commit -m "リリースノートを追加")  > /dev/null
 
+echo "ブランチの追加、コミットを完了しました。"
+echo "プッシュ及び、プルリクエストを作成してください。"
+
 exit 0
