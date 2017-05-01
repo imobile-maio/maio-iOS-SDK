@@ -71,6 +71,16 @@ tmprelease=$(mktemp)
 trap onExit EXIT
 trap 'echo "trap">&2;trap - EXIT; onExit; exit -1' SIGHUP SIGINT SIGTERM
 
+echo "" >> $tmpfile
+echo "# リリースノートの内容を入力してください。" >> $tmpfile
+echo "# '#'で始まる行は無視されます。" >> $tmpfile
+vi $tmpfile
+
+releaseNote=$(cat $tmpfile | sed "/^#/d" | sed -E "s/[ 　]*$//g" | tr -s "\n")
+echo "リリースノート"
+echo "## $TARGET_VERSION"
+echo "$releaseNote"
+
 echo "コミットしてよろしいですか？(y/N)"
 read key
 while [ -z $key ]
