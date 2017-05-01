@@ -97,6 +97,7 @@ if [ "$key" != "y" ]; then
     exit 0
 fi
 
+echo $(cd $ROOT && git commit -m "Maio.frameworkを${TARGET_VERSION}に更新") > /dev/null
 
 
 exit 0
