@@ -107,4 +107,14 @@ sed -i '' -E "s/(Released: ?)[0-9/]+/\1${TODAY//\//\\/}/" $ROOT/README.md
 echo $(cd $ROOT && git add $ROOT/README.md) > /dev/null
 echo $(cd $ROOT && git commit -m "READMEのリリースバージョン、リリース日を更新") > /dev/null
 
+head -2 $ROOT/release-notes.md >> $tmprelease
+echo "## $TARGET_VERSION (${TODAY//\//-})" >> $tmprelease
+echo $releaseNote >> $tmprelease
+echo "" >> $tmprelease
+sed "1,2d" $ROOT/release-notes.md >> $tmprelease
+cat $tmprelease > $ROOT/release-notes.md
+
+echo $(cd $ROOT && git add $ROOT/release-notes.md) > /dev/null
+echo $(cd $ROOT && git commit -m "リリースノートを追加")  > /dev/null
+
 exit 0
