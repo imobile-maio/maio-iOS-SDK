@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Start Maio.framework pdate script."
+echo "Start Maio.framework Update script."
 
 readonly ROOT=$(cd $(dirname $0)/.. && pwd)
 readonly FRAMEWORK="$ROOT/Maio.framework"
