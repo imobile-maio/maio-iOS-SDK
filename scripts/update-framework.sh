@@ -97,6 +97,8 @@ if [ "$key" != "y" ]; then
     exit 0
 fi
 
+echo $(cd $ROOT && git checkout -b "release/${TARGET_VERSION}") > /dev/null
+
 echo $(cd $ROOT && git commit -m "Maio.frameworkを${TARGET_VERSION}に更新") > /dev/null
 
 
