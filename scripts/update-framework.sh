@@ -60,6 +60,17 @@ if [ $LATEST_VERSION == $TARGET_VERSION ] ||
     exit 1
 fi
 
+set -eu
+onExit() {
+    echo "exit"
+    [[ -n $tmpfile ]] && rm -f "$tmpfile"
+    [[ -n $tmprelease ]] && rm -f "$tmprelease"
+}
+tmpfile=$(mktemp)
+tmprelease=$(mktemp)
+trap onExit EXIT
+trap 'echo "trap">&2;trap - EXIT; onExit; exit -1' SIGHUP SIGINT SIGTERM
+
 echo "コミットしてよろしいですか？(y/N)"
 read key
 while [ -z $key ]
