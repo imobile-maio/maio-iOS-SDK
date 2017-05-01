@@ -38,7 +38,10 @@ fi
 
 echo ""
 echo "差分のあるファイル名を列挙します。"
-echo $DIFF_FILENAMES
+for item in $DIFF_FILENAMES
+do
+    echo $item
+done
 
 # バージョン番号更新チェック
 ## 現行タグから最新バージョン番号を取得
