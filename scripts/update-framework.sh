@@ -36,12 +36,14 @@ if [ -z "$DIFF_FILENAMES" ]; then
     exit 0
 fi
 
+echo ""
 echo "差分のあるファイル名を列挙します。"
 echo $DIFF_FILENAMES
 
 # バージョン番号更新チェック
 ## 現行タグから最新バージョン番号を取得
 readonly LATEST_VERSION=$(git tag | sort -t. -k 1.2,1n -k 2,2n -k 3,3n |tail -1)
+echo ""
 echo "latest: $LATEST_VERSION"
 
 readonly TARGET_VERSION="v$(plutil -p $FRAMEWORK/Info.plist | grep "CFBundleShortVersionString" | sed -e "s/[^0-9.]//g")"
@@ -77,10 +79,13 @@ echo "# '#'で始まる行は無視されます。" >> $tmpfile
 vi $tmpfile
 
 releaseNote=$(cat $tmpfile | sed "/^#/d" | sed -E "s/[ 　]*$//g" | tr -s "\n")
+echo ""
 echo "リリースノート"
+echo ""
 echo "## $TARGET_VERSION"
 echo "$releaseNote"
 
+echo ""
 echo "コミットしてよろしいですか？(y/N)"
 read key
 while [ -z $key ]
