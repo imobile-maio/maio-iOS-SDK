@@ -110,7 +110,7 @@ echo $(cd $ROOT && git checkout -b "release/${TARGET_VERSION}") > /dev/null
 echo $(cd $ROOT && git commit -m "Maio.frameworkを${TARGET_VERSION}に更新") > /dev/null
 
 readonly TODAY=$(date "+%Y/%m/%d")
-sed -i '' -E "s/(Version: ?)[0-9.]+/\1${TARGET_VERSION#v}/" $ROOT/README.md
+sed -i '' -E "s/(Version: ?).*$/\1${TARGET_VERSION#v}/" $ROOT/README.md
 sed -i '' -E "s/(Released: ?)[0-9/]+/\1${TODAY//\//\\/}/" $ROOT/README.md
 echo $(cd $ROOT && git add $ROOT/README.md) > /dev/null
 echo $(cd $ROOT && git commit -m "READMEのリリースバージョン、リリース日を更新") > /dev/null
