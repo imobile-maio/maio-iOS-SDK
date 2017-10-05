@@ -65,7 +65,7 @@ if [ $LATEST_VERSION == $TARGET_VERSION ] ||
     exit 1
 fi
 
-set -eu
+set -u
 onExit() {
     echo "exit"
     [[ -n $tmpfile ]] && rm -f "$tmpfile"
