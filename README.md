@@ -15,35 +15,18 @@
 
 ## Quick Start
 
-### maio SDKの導入
+### maio SDKの取得
 
-[CocoaPods](https://guides.cocoapods.org/using/getting-started.html#toc_3)を用いた導入方法となります。
-
-maioを導入したいプロジェクトの階層に`Podfile`を作成します。
-
-```sh
-cd path/to/project # `(導入したいプロジェクト).xcodeproj`のあるディレクトリに移動します
-pod init
-```
-
-生成されたPodfileを開き、以下の内容を導入したいアプリのtargetに追加します。
+maioを導入したいプロジェクトの`Podfile`に、以下の内容を追加します。
 
 ```ruby
 pod 'MaioSDK'
 ```
 
-追加したら、以下のコマンドを実行します。
-
-```sh
-pod install --repo-update
-```
 
 ### maio SDKの準備
 
-広告を表示するためには、`[Maio startWithMediaId:delegate:]`を呼び出し、MediaIdを渡してセットアップを始める必要があります。
-セットアップを始めると、SDKは広告表示に必要なリソースのダウンロードを自動で行います。
-
-この命令は一度実行されれば十分で、なるべく早く呼び出すことがスムーズな広告表示につながります。
+`[Maio startWithMediaId:delegate:]`を呼び出し、maio SDKの初期化を開始します。
 
 ```ObjC
 // AppDelegate.m
@@ -67,9 +50,7 @@ pod install --repo-update
 
 ### maioの表示
 
-動画広告を表示する前に、表示準備が完了しているか確認することをおすすめします。
-`[Maio canShow]`は、表示準備が正常に完了したかどうかを示します。
-
+`[Maio canShow]`で、表示準備が完了したか確認し、`[Maio show]`で表示します。
 
 ```ObjC
 #import <Maio/Maio.h>
