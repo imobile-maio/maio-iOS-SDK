@@ -85,7 +85,7 @@ pod install --repo-update
 @end
 ```
 
-## Download
+## Manual Download
 [releases](https://github.com/imobile-maio/maio-iOS-SDK/releases) から最新のリリースバージョンをダウンロードして下さい。
 
 ## Get Started
