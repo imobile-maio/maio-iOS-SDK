@@ -9,8 +9,8 @@ MaioSDK is Ad SDK of fullscreen movie
                        DESC
 
   s.homepage         = 'https://maio.jp'
-  s.license          = { :type => 'Copyright', :text => 'Copyright 2017 i-mobile Corp. All Rights Reserved.' }
-  s.author           = 'i-mobile Corporation'
+  s.license          = { :type => 'Copyright', :text => 'Copyright 2018 i-mobile Co.,Ltd. All Rights Reserved.' }
+  s.author           = 'i-mobile Co.,Ltd.'
   s.source           = { :http => "https://github.com/imobile-maio/maio-iOS-SDK/releases/download/v#{sdk_version}/Maio.framework.zip",
                          :flatten => true,
                          :type => 'zip' }
