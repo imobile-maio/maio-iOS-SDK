@@ -11,6 +11,7 @@
     NSMutableArray *_outputs;
 }
 @property (weak, nonatomic) IBOutlet UIButton *openAd;
+@property (weak, nonatomic) IBOutlet UIButton *openSkippableAd;
 @property (weak, nonatomic) IBOutlet UILabel *logLabel;
 @end
 
@@ -47,6 +48,8 @@
     }
 }
 
+- (IBAction)onOpenSkippableAd:(id)sender {
+}
 
 #pragma mark MaioDelegate
 
