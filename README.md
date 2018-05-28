@@ -2,7 +2,7 @@
 
 # maio iOS SDK
 - Version: 1.3.0
-- Released: 2018/05/28
+- Released: 2018/05/29
 - Supported: iOS 8.0+ (Xcode 9+)
 
 ## What is maio?
