@@ -1,7 +1,7 @@
 # Release Notes
 
 ## v1.3.1 (2018-06-11)
-- SSZipArchive, minizip利用環境下で、duplicate symbolエラーが発生してしまう現象に対処
+- SSZipArchive, minizip利用環境下で、duplicate symbolエラーが発生してしまう現象に対処しました。
 
 ## v1.3.0 (2018-05-29)
 - プレイアブルアドに対応しました。
