@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.3.2 (2018-07-10)
+- 稀に発生する不具合を修正しました。
+
 ## v1.3.1 (2018-06-11)
 - SSZipArchive, minizip利用環境下で、duplicate symbolエラーが発生してしまう現象に対処しました。
 
