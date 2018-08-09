@@ -1,4 +1,4 @@
-sdk_version = '1.2.19'
+sdk_version = '1.3.2'
 
 Pod::Spec.new do |s|
   s.name             = 'MaioSDK'
@@ -9,8 +9,8 @@ MaioSDK is Ad SDK of fullscreen movie
                        DESC
 
   s.homepage         = 'https://maio.jp'
-  s.license          = { :type => 'Copyright', :text => 'Copyright 2018 i-mobile Co.,Ltd. All Rights Reserved.' }
-  s.author           = 'i-mobile Co.,Ltd.'
+  s.license          = { :type => 'Copyright', :text => 'Copyright 2015 i-mobile' }
+  s.author           = 'i-mobile'
   s.source           = { :http => "https://github.com/imobile-maio/maio-iOS-SDK/releases/download/v#{sdk_version}/Maio.framework.zip",
                          :flatten => true,
                          :type => 'zip' }
@@ -18,8 +18,9 @@ MaioSDK is Ad SDK of fullscreen movie
   s.vendored_frameworks = 'Maio.framework'
 
   s.platform = :ios
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '8.0'
 
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-  s.frameworks = 'UIKit', 'CoreMedia', 'AVFoundation', 'SystemConfiguration', 'MobileCoreServices', 'AdSupport', 'StoreKit'
+  s.frameworks = 'UIKit', 'CoreMedia', 'AVFoundation', 'SystemConfiguration', 'MobileCoreServices', 'AdSupport', 'StoreKit', 'WebKit'
+  s.library = 'z'
 end
