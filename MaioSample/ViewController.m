@@ -12,6 +12,7 @@
 }
 @property (weak, nonatomic) IBOutlet UIButton *openAd;
 @property (weak, nonatomic) IBOutlet UIButton *openSkippableAd;
+@property (weak, nonatomic) IBOutlet UIButton *openPlayableAd;
 @property (weak, nonatomic) IBOutlet UILabel *logLabel;
 @end
 
@@ -19,6 +20,7 @@
 
 NSString * const MAIO_ZONE_ID = @"DemoPublisherZone";
 NSString * const MAIO_SKIPPABLE_ZONE_ID = @"DemoPublisherZoneSkippable";
+NSString * const MAIO_PLAYABLE_ZONE_ID = @"DemoPublisherZonePlayableForiOS";
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -58,6 +60,12 @@ NSString * const MAIO_SKIPPABLE_ZONE_ID = @"DemoPublisherZoneSkippable";
     }
 }
 
+- (IBAction)onOpenPlayableAd:(id)sender {
+    // 動画広告を表示
+    if ([Maio canShowAtZoneId:MAIO_PLAYABLE_ZONE_ID]) {
+        [Maio showAtZoneId:MAIO_PLAYABLE_ZONE_ID];
+    }
+}
 #pragma mark MaioDelegate
 
 /**
@@ -83,6 +91,8 @@ NSString * const MAIO_SKIPPABLE_ZONE_ID = @"DemoPublisherZoneSkippable";
         self.openAd.enabled = newValue;
     } else if ([zoneId isEqualToString:MAIO_SKIPPABLE_ZONE_ID]) {
         self.openSkippableAd.enabled = newValue;
+    } else if ([zoneId isEqualToString:MAIO_PLAYABLE_ZONE_ID]) {
+        self.openPlayableAd.enabled = newValue;
     }
     
 }

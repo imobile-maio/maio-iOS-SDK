@@ -63,6 +63,9 @@
                                 <state key="normal" title="プレイアブル広告を再生">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onOpenPlayableAd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="msE-t2-EiF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,6 +88,7 @@
                     <connections>
                         <outlet property="logLabel" destination="tXQ-0g-hTK" id="5kP-0d-uhb"/>
                         <outlet property="openAd" destination="LbC-yI-ffN" id="UqM-r5-cPw"/>
+                        <outlet property="openPlayableAd" destination="Hp1-J8-QF0" id="nC7-eR-EYg"/>
                         <outlet property="openSkippableAd" destination="igl-gf-mN5" id="uY6-iR-9oh"/>
                     </connections>
                 </viewController>
