@@ -26,7 +26,7 @@
                                 <rect key="frame" x="16" y="265" width="343" height="394"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ログ]" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="tXQ-0g-hTK">
-                                        <rect key="frame" x="8" y="8" width="47" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="47" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igl-gf-mN5">
-                                <rect key="frame" x="16" y="161" width="343" height="30"/>
+                                <rect key="frame" x="16" y="142" width="343" height="30"/>
                                 <state key="normal" title="スキップ可能な動画広告を再生">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -58,18 +58,27 @@
                                     <action selector="onOpenSkippableAd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9hL-cV-GCW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp1-J8-QF0">
+                                <rect key="frame" x="16" y="192" width="343" height="30"/>
+                                <state key="normal" title="プレイアブル広告を再生">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ScJ-hf-wJj" firstAttribute="leading" secondItem="LbC-yI-ffN" secondAttribute="leading" id="2Mc-ei-X55"/>
                             <constraint firstItem="ScJ-hf-wJj" firstAttribute="leading" secondItem="qnA-JG-mMz" secondAttribute="leadingMargin" id="3hh-Kd-nzA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="igl-gf-mN5" secondAttribute="trailing" id="F7a-mG-GSh"/>
+                            <constraint firstItem="Hp1-J8-QF0" firstAttribute="leading" secondItem="qnA-JG-mMz" secondAttribute="leadingMargin" id="HIV-xm-vjP"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ScJ-hf-wJj" secondAttribute="bottom" constant="8" symbolic="YES" id="ILM-G6-SJd"/>
-                            <constraint firstItem="ScJ-hf-wJj" firstAttribute="top" secondItem="igl-gf-mN5" secondAttribute="bottom" constant="74" id="KXi-XM-kwH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hp1-J8-QF0" secondAttribute="trailing" id="PnP-7t-Obu"/>
                             <constraint firstItem="LbC-yI-ffN" firstAttribute="trailing" secondItem="ScJ-hf-wJj" secondAttribute="trailing" id="XXt-Ws-bUe"/>
+                            <constraint firstItem="ScJ-hf-wJj" firstAttribute="top" secondItem="Hp1-J8-QF0" secondAttribute="bottom" constant="43" id="c2g-HV-sTF"/>
                             <constraint firstItem="igl-gf-mN5" firstAttribute="leading" secondItem="qnA-JG-mMz" secondAttribute="leadingMargin" id="fDf-3d-4GH"/>
+                            <constraint firstItem="Hp1-J8-QF0" firstAttribute="top" secondItem="igl-gf-mN5" secondAttribute="bottom" constant="20" id="iQ0-RA-qbi"/>
                             <constraint firstItem="LbC-yI-ffN" firstAttribute="trailing" secondItem="qnA-JG-mMz" secondAttribute="trailingMargin" id="iSI-2w-5lH"/>
-                            <constraint firstItem="igl-gf-mN5" firstAttribute="top" secondItem="LbC-yI-ffN" secondAttribute="bottom" constant="39" id="niz-6Z-EiV"/>
+                            <constraint firstItem="igl-gf-mN5" firstAttribute="top" secondItem="LbC-yI-ffN" secondAttribute="bottom" constant="20" id="niz-6Z-EiV"/>
                             <constraint firstItem="LbC-yI-ffN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="qdb-WW-zuc"/>
                         </constraints>
                     </view>
