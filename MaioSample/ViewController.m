@@ -11,10 +11,16 @@
     NSMutableArray *_outputs;
 }
 @property (weak, nonatomic) IBOutlet UIButton *openAd;
+@property (weak, nonatomic) IBOutlet UIButton *openSkippableAd;
+@property (weak, nonatomic) IBOutlet UIButton *openPlayableAd;
 @property (weak, nonatomic) IBOutlet UILabel *logLabel;
 @end
 
 @implementation ViewController
+
+NSString * const MAIO_ZONE_ID = @"DemoPublisherZone";
+NSString * const MAIO_SKIPPABLE_ZONE_ID = @"DemoPublisherZoneSkippable";
+NSString * const MAIO_PLAYABLE_ZONE_ID = @"DemoPublisherZonePlayableForiOS";
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -42,12 +48,24 @@
  */
 - (IBAction)onOpenAd:(id)sender {
     // 動画広告を表示
-    if ([Maio canShow]) {
-        [Maio show];
+    if ([Maio canShowAtZoneId:MAIO_ZONE_ID]) {
+        [Maio showAtZoneId:MAIO_ZONE_ID];
     }
 }
 
+- (IBAction)onOpenSkippableAd:(id)sender {
+    // 動画広告を表示
+    if ([Maio canShowAtZoneId:MAIO_SKIPPABLE_ZONE_ID]) {
+        [Maio showAtZoneId:MAIO_SKIPPABLE_ZONE_ID];
+    }
+}
 
+- (IBAction)onOpenPlayableAd:(id)sender {
+    // 動画広告を表示
+    if ([Maio canShowAtZoneId:MAIO_PLAYABLE_ZONE_ID]) {
+        [Maio showAtZoneId:MAIO_PLAYABLE_ZONE_ID];
+    }
+}
 #pragma mark MaioDelegate
 
 /**
@@ -69,7 +87,14 @@
     [self appendLog:[NSString stringWithFormat:@"%@: %@ newValue: %@", @(__FUNCTION__), zoneId, newValue? @"YES": @"NO"]];
     
     // 広告が表示可能ならトリガーを有効化
-    self.openAd.enabled = newValue;
+    if ([zoneId isEqualToString:MAIO_ZONE_ID]) {
+        self.openAd.enabled = newValue;
+    } else if ([zoneId isEqualToString:MAIO_SKIPPABLE_ZONE_ID]) {
+        self.openSkippableAd.enabled = newValue;
+    } else if ([zoneId isEqualToString:MAIO_PLAYABLE_ZONE_ID]) {
+        self.openPlayableAd.enabled = newValue;
+    }
+    
 }
 
 /**

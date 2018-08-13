@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,16 +19,16 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qnA-JG-mMz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScJ-hf-wJj">
-                                <rect key="frame" x="16" y="224" width="568" height="368"/>
+                                <rect key="frame" x="16" y="265" width="343" height="394"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ログ]" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="tXQ-0g-hTK">
-                                        <rect key="frame" x="8" y="8" width="43" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="47" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -35,34 +40,61 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbC-yI-ffN">
-                                <rect key="frame" x="16" y="153" width="568" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="0.62" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="92" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.62" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="動画広告を再生">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onOpenAd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sma-As-ily"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igl-gf-mN5">
+                                <rect key="frame" x="16" y="142" width="343" height="30"/>
+                                <state key="normal" title="スキップ可能な動画広告を再生">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onOpenSkippableAd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9hL-cV-GCW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp1-J8-QF0">
+                                <rect key="frame" x="16" y="192" width="343" height="30"/>
+                                <state key="normal" title="プレイアブル広告を再生">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onOpenPlayableAd:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="msE-t2-EiF"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ScJ-hf-wJj" firstAttribute="leading" secondItem="LbC-yI-ffN" secondAttribute="leading" id="2Mc-ei-X55"/>
                             <constraint firstItem="ScJ-hf-wJj" firstAttribute="leading" secondItem="qnA-JG-mMz" secondAttribute="leadingMargin" id="3hh-Kd-nzA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="igl-gf-mN5" secondAttribute="trailing" id="F7a-mG-GSh"/>
+                            <constraint firstItem="Hp1-J8-QF0" firstAttribute="leading" secondItem="qnA-JG-mMz" secondAttribute="leadingMargin" id="HIV-xm-vjP"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ScJ-hf-wJj" secondAttribute="bottom" constant="8" symbolic="YES" id="ILM-G6-SJd"/>
-                            <constraint firstItem="ScJ-hf-wJj" firstAttribute="top" secondItem="LbC-yI-ffN" secondAttribute="bottom" constant="41" id="XAZ-JM-vQw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hp1-J8-QF0" secondAttribute="trailing" id="PnP-7t-Obu"/>
                             <constraint firstItem="LbC-yI-ffN" firstAttribute="trailing" secondItem="ScJ-hf-wJj" secondAttribute="trailing" id="XXt-Ws-bUe"/>
+                            <constraint firstItem="ScJ-hf-wJj" firstAttribute="top" secondItem="Hp1-J8-QF0" secondAttribute="bottom" constant="43" id="c2g-HV-sTF"/>
+                            <constraint firstItem="igl-gf-mN5" firstAttribute="leading" secondItem="qnA-JG-mMz" secondAttribute="leadingMargin" id="fDf-3d-4GH"/>
+                            <constraint firstItem="Hp1-J8-QF0" firstAttribute="top" secondItem="igl-gf-mN5" secondAttribute="bottom" constant="20" id="iQ0-RA-qbi"/>
                             <constraint firstItem="LbC-yI-ffN" firstAttribute="trailing" secondItem="qnA-JG-mMz" secondAttribute="trailingMargin" id="iSI-2w-5lH"/>
-                            <constraint firstItem="LbC-yI-ffN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="133" id="qdb-WW-zuc"/>
+                            <constraint firstItem="igl-gf-mN5" firstAttribute="top" secondItem="LbC-yI-ffN" secondAttribute="bottom" constant="20" id="niz-6Z-EiV"/>
+                            <constraint firstItem="LbC-yI-ffN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="qdb-WW-zuc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="logLabel" destination="tXQ-0g-hTK" id="5kP-0d-uhb"/>
                         <outlet property="openAd" destination="LbC-yI-ffN" id="UqM-r5-cPw"/>
+                        <outlet property="openPlayableAd" destination="Hp1-J8-QF0" id="nC7-eR-EYg"/>
+                        <outlet property="openSkippableAd" destination="igl-gf-mN5" id="uY6-iR-9oh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>
