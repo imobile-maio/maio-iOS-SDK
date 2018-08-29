@@ -25,6 +25,10 @@ typedef NS_ENUM(NSInteger, MaioFailReason) {
     MaioFailReasonDownloadCancelled,
     /// 動画再生エラー
     MaioFailReasonVideoPlayback,
+    /// メディアID異常エラー
+    MaioFailReasonIncorrectMediaId,
+    /// ゾーンID異常エラー
+    MaioFailReasonIncorrectZoneId,
 };
 
 
