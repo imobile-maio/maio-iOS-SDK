@@ -1,4 +1,4 @@
-sdk_version = '1.4.2'
+sdk_version = '1.4.3'
 
 Pod::Spec.new do |s|
   s.name             = 'MaioSDK'
@@ -12,7 +12,6 @@ MaioSDK is Ad SDK of fullscreen movie
   s.license          = { :type => 'Copyright', :text => 'Copyright 2015 i-mobile' }
   s.author           = 'i-mobile'
   s.source           = { :http => "https://github.com/imobile-maio/maio-iOS-SDK/releases/download/v#{sdk_version}/Maio.framework.zip",
-                         :flatten => true,
                          :type => 'zip' }
 
   s.vendored_frameworks = 'Maio.framework'
