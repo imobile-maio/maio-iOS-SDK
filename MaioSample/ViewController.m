@@ -198,6 +198,10 @@ NSString * const MAIO_PLAYABLE_ZONE_ID = @"DemoPublisherZonePlayableForiOS";
             return @"AdStockOut";
         case MaioFailReasonVideoPlayback:
             return @"VideoPlayback";
+        case MaioFailReasonIncorrectMediaId:
+            return @"IncorrectMediaId";
+        case MaioFailReasonIncorrectZoneId:
+            return @"IncorrectZoneId";
     }
 }
 
