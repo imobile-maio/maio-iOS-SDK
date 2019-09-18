@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.4.8 (2019-09-18)
+- Xcode11におけるStoreKitの仕様変更により、iOS13でクラッシュしてしまう問題を修正。
+
 ## v1.4.7 (2019-06-27)
 - 広告リソースのダウンロードにおいて、稀にNSFileHandleOperationExceptionがthrowされる現象に対応しました。
 
