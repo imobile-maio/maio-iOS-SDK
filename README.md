@@ -1,9 +1,9 @@
 ![](https://github.com/imobile-maio/maio-iOS-SDK/blob/wiki/doc/images/logo.png)
 
 # maio iOS SDK
-- Version: 1.4.8
-- Released: 2019/09/18
-- Supported: iOS 8.0+ (Xcode 9+)
+- Version: 1.5.0
+- Released: 2019/10/15
+- Supported: iOS 8.0+ (Xcode 11+)
 
 ## What is maio?
 [maio](https://maio.jp/) はこれまでのバナー広告に加え、新たな広告収益の機会を得ることが可能な動画広告プラットフォームです。

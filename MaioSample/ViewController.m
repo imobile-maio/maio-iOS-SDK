@@ -49,21 +49,21 @@ NSString * const MAIO_PLAYABLE_ZONE_ID = @"DemoPublisherZonePlayableForiOS";
 - (IBAction)onOpenAd:(id)sender {
     // 動画広告を表示
     if ([Maio canShowAtZoneId:MAIO_ZONE_ID]) {
-        [Maio showAtZoneId:MAIO_ZONE_ID];
+        [Maio showAtZoneId:MAIO_ZONE_ID vc:self];
     }
 }
 
 - (IBAction)onOpenSkippableAd:(id)sender {
     // 動画広告を表示
     if ([Maio canShowAtZoneId:MAIO_SKIPPABLE_ZONE_ID]) {
-        [Maio showAtZoneId:MAIO_SKIPPABLE_ZONE_ID];
+        [Maio showAtZoneId:MAIO_SKIPPABLE_ZONE_ID vc:self];
     }
 }
 
 - (IBAction)onOpenPlayableAd:(id)sender {
     // 動画広告を表示
     if ([Maio canShowAtZoneId:MAIO_PLAYABLE_ZONE_ID]) {
-        [Maio showAtZoneId:MAIO_PLAYABLE_ZONE_ID];
+        [Maio showAtZoneId:MAIO_PLAYABLE_ZONE_ID vc:self];
     }
 }
 #pragma mark MaioDelegate
@@ -202,6 +202,8 @@ NSString * const MAIO_PLAYABLE_ZONE_ID = @"DemoPublisherZonePlayableForiOS";
             return @"IncorrectMediaId";
         case MaioFailReasonIncorrectZoneId:
             return @"IncorrectZoneId";
+        case MaioFailReasonNotFoundViewContext:
+            return @"NotFoundViewContext";
     }
 }
 
