@@ -202,6 +202,8 @@ NSString * const MAIO_PLAYABLE_ZONE_ID = @"DemoPublisherZonePlayableForiOS";
             return @"IncorrectMediaId";
         case MaioFailReasonIncorrectZoneId:
             return @"IncorrectZoneId";
+        case MaioFailReasonNotFoundViewContext:
+            return @"NotFoundViewContext";
     }
 }
 
