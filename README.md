@@ -59,7 +59,7 @@ pod 'MaioSDK'
 
 - (IBAction) showAd: (UIButton*) sender {
     if ([Maio canShow]) {
-        [Maio show];
+        [Maio showWithViewController:self];
     }
 }
 
