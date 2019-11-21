@@ -50,7 +50,7 @@ pod 'MaioSDK'
 
 ### maioの表示
 
-`[Maio canShow]`で、表示準備が完了したか確認し、`[Maio show]`で表示します。
+`[Maio canShow]`で、表示準備が完了したか確認し、`[Maio showWithViewController:]`で表示します。
 
 ```ObjC
 #import <Maio/Maio.h>
