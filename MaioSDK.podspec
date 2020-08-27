@@ -1,4 +1,4 @@
-sdk_version = '1.5.4'
+sdk_version = '1.5.5'
 
 Pod::Spec.new do |s|
   s.name             = 'MaioSDK'
