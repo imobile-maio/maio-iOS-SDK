@@ -1,0 +1,4 @@
+framework module MaioOB {
+  header "MaioOB-Swift.h"
+  requires objc
+}

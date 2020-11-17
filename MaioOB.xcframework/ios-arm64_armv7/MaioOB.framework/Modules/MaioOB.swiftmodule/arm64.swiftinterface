@@ -1,0 +1,58 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target arm64-apple-ios8.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MaioOB
+import AVFoundation
+import AdSupport
+import CoreTelephony
+import Foundation
+import SafariServices
+import StoreKit
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+@objc @objcMembers public class MaioRequest : ObjectiveC.NSObject {
+  @objc final public let zoneId: Swift.String
+  @objc final public let testMode: Swift.Bool
+  @objc final public let bidData: Swift.String?
+  @objc public init(zoneId: Swift.String, testMode: Swift.Bool, bidData: Swift.String?)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol MaioRewardedLoadCallback : AnyObject {
+  @objc optional func didLoad(_ ad: MaioOB.MaioRewarded)
+  @objc optional func didFail(_ ad: MaioOB.MaioRewarded, errorCode: Swift.Int)
+}
+@objc public protocol MaioRewardedShowCallback : AnyObject {
+  @objc optional func didOpen(_ ad: MaioOB.MaioRewarded)
+  @objc optional func didClose(_ ad: MaioOB.MaioRewarded)
+  @objc optional func didReward(_ ad: MaioOB.MaioRewarded, reward: MaioOB.RewardData)
+  @objc optional func didFail(_ ad: MaioOB.MaioRewarded, errorCode: Swift.Int)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class MaioRewarded : ObjectiveC.NSObject {
+  @objc public static func loadAd(request: MaioOB.MaioRequest, callback: MaioOB.MaioRewardedLoadCallback?) -> MaioOB.MaioRewarded
+  @objc public func show(viewContext context: UIKit.UIViewController, callback: MaioOB.MaioRewardedShowCallback?)
+  @objc public var request: MaioOB.MaioRequest {
+    @objc get
+  }
+  @objc public var isReady: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @objcMembers public class RewardData : ObjectiveC.NSObject {
+  @objc final public let value: Swift.String
+  @objc public init(value: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class MaioVersion : ObjectiveC.NSObject {
+  @objc public static let shared: MaioOB.MaioVersion
+  @objc public func toString() -> Swift.String
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
