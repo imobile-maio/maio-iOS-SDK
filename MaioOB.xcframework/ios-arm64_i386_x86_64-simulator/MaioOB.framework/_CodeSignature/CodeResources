@@ -10,83 +10,83 @@
 		</data>
 		<key>Headers/MaioOB-Swift.h</key>
 		<data>
-		kyAOuGq1JF4NkFzMdkPkLyKxOKY=
+		6bSgU+VJyrgoZGaIT7Fu9WBv/AI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JyWh7SxnZ3ifClPARTVUHMI+hb0=
+		m7lP9qAXArWm8eLP1206pfJn4/U=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fRSamt+ZEK/1EERmQxv2YFZfO4s=
+		GytCtXLjHDO7bKyDXWxO9qJQATo=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Pj4+/VGFINY6yxEUS99HyDCiO7o=
+		aFs5s1Y6sBTDPZftTsWyKkKbcwg=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		S+4BwA+2zT4/LPf+b2FXV/S1zOQ=
+		WLqniaaEDBpuiDLkWzQcSTwUzGM=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		fRSamt+ZEK/1EERmQxv2YFZfO4s=
+		GytCtXLjHDO7bKyDXWxO9qJQATo=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Pj4+/VGFINY6yxEUS99HyDCiO7o=
+		aFs5s1Y6sBTDPZftTsWyKkKbcwg=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		S+4BwA+2zT4/LPf+b2FXV/S1zOQ=
+		WLqniaaEDBpuiDLkWzQcSTwUzGM=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gijBo1q4m5qCaI11vIjnrDkb2ZE=
+		oDf8jO0VuYREMviQKKpFNMEbmGs=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		z7y+iW4dO+GKFkNPY4PIcHjqPko=
+		eVoBpQ2sEBYb+qyVbzi1vXYbsJM=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RYWjy5JzXDCgJYnILPXpZm/q4vg=
+		iKYG5kuIehujN5DhJ8nf9pBQpaA=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/i386.swiftdoc</key>
 		<data>
-		gijBo1q4m5qCaI11vIjnrDkb2ZE=
+		oDf8jO0VuYREMviQKKpFNMEbmGs=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/i386.swiftinterface</key>
 		<data>
-		z7y+iW4dO+GKFkNPY4PIcHjqPko=
+		eVoBpQ2sEBYb+qyVbzi1vXYbsJM=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/i386.swiftmodule</key>
 		<data>
-		RYWjy5JzXDCgJYnILPXpZm/q4vg=
+		iKYG5kuIehujN5DhJ8nf9pBQpaA=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		NgdnYSxrh6PeK6gGhLoo7wBQveo=
+		eOTrflNLPrgomiuOZZlA5F9mSGs=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zVv5nlHQAyt5TL/E3npCP/o50r8=
+		wrLvvfVHoK+fcb2cRfCC94lFFN4=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ud448kqAUbCzGonz0xeDJ2izzXA=
+		Ikcr34U5Hw9tKob2i9jZjCBalHI=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		NgdnYSxrh6PeK6gGhLoo7wBQveo=
+		eOTrflNLPrgomiuOZZlA5F9mSGs=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		zVv5nlHQAyt5TL/E3npCP/o50r8=
+		wrLvvfVHoK+fcb2cRfCC94lFFN4=
 		</data>
 		<key>Modules/MaioOB.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ud448kqAUbCzGonz0xeDJ2izzXA=
+		Ikcr34U5Hw9tKob2i9jZjCBalHI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,10 +97,6 @@
 	<dict>
 		<key>Headers/Maio.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			28OMA34MCepUUO1r7YFZoO8XW2k=
-			</data>
 			<key>hash2</key>
 			<data>
 			wYL+fu1YjHn24YZf7KL3gBXBftl71ULG+apzBndywaI=
@@ -108,219 +104,139 @@
 		</dict>
 		<key>Headers/MaioOB-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kyAOuGq1JF4NkFzMdkPkLyKxOKY=
-			</data>
 			<key>hash2</key>
 			<data>
-			W4+SqYryPH83hQI3f4R1aMVwWn50tqsCTJCD73Bw9I4=
+			HSuG5MpEx7IuIIV2UJtnCA5ZddtUQjGnr6f6F1aMbjc=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fRSamt+ZEK/1EERmQxv2YFZfO4s=
-			</data>
 			<key>hash2</key>
 			<data>
-			ClP2StcC57Vw7gEIUKAQDqZU2ZaFi9ovVUIGVa/gXG8=
+			ds0QXJZihbmHzcq6ff+S88rMgQObKG7Bcsk24dOJyjQ=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Pj4+/VGFINY6yxEUS99HyDCiO7o=
-			</data>
 			<key>hash2</key>
 			<data>
-			WlDKfP+J3LJnPyX0aW+v7Juxfc/W6lQR7khfdZnK5Vg=
+			cOuPW8/E2IYdiFZubbca87q+3fjgUUhuU90b52YWnuo=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S+4BwA+2zT4/LPf+b2FXV/S1zOQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			fQc1G1cLXnuhK+bkCJh2gRzUc03Gz8ca5XiHhn2p6ec=
+			YSjocwtcKV2tOjsqdMTD4Wc/nWmoi2quxaC8myTwHK8=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/arm64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fRSamt+ZEK/1EERmQxv2YFZfO4s=
-			</data>
 			<key>hash2</key>
 			<data>
-			ClP2StcC57Vw7gEIUKAQDqZU2ZaFi9ovVUIGVa/gXG8=
+			ds0QXJZihbmHzcq6ff+S88rMgQObKG7Bcsk24dOJyjQ=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/arm64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Pj4+/VGFINY6yxEUS99HyDCiO7o=
-			</data>
 			<key>hash2</key>
 			<data>
-			WlDKfP+J3LJnPyX0aW+v7Juxfc/W6lQR7khfdZnK5Vg=
+			cOuPW8/E2IYdiFZubbca87q+3fjgUUhuU90b52YWnuo=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/arm64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S+4BwA+2zT4/LPf+b2FXV/S1zOQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			fQc1G1cLXnuhK+bkCJh2gRzUc03Gz8ca5XiHhn2p6ec=
+			YSjocwtcKV2tOjsqdMTD4Wc/nWmoi2quxaC8myTwHK8=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gijBo1q4m5qCaI11vIjnrDkb2ZE=
-			</data>
 			<key>hash2</key>
 			<data>
-			x/MCGIUYvH5xq/KhSFH3NjENfP545GE1ieswZx/dgEY=
+			0JOx3jeCLtMz659ujyje+HQBCABJd+XOS6lw6YlaJEU=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			z7y+iW4dO+GKFkNPY4PIcHjqPko=
-			</data>
 			<key>hash2</key>
 			<data>
-			998QRwqzYjnHAhw3AYP57ReZWr23wc8Qgr+oTz8gA64=
+			QfUqVW7ZzbUs2s/pDyHOXIuzgIL/SezIQyOmvyvKL5c=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RYWjy5JzXDCgJYnILPXpZm/q4vg=
-			</data>
 			<key>hash2</key>
 			<data>
-			B9camcQp09hzK/xnDhv2sjaCiD1gFRrvqnqAoAw4zJo=
+			mQAqByn2/mpnXUehQ7OxXSoC35zfRSZnS3eJN15FZVU=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/i386.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gijBo1q4m5qCaI11vIjnrDkb2ZE=
-			</data>
 			<key>hash2</key>
 			<data>
-			x/MCGIUYvH5xq/KhSFH3NjENfP545GE1ieswZx/dgEY=
+			0JOx3jeCLtMz659ujyje+HQBCABJd+XOS6lw6YlaJEU=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/i386.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			z7y+iW4dO+GKFkNPY4PIcHjqPko=
-			</data>
 			<key>hash2</key>
 			<data>
-			998QRwqzYjnHAhw3AYP57ReZWr23wc8Qgr+oTz8gA64=
+			QfUqVW7ZzbUs2s/pDyHOXIuzgIL/SezIQyOmvyvKL5c=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/i386.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RYWjy5JzXDCgJYnILPXpZm/q4vg=
-			</data>
 			<key>hash2</key>
 			<data>
-			B9camcQp09hzK/xnDhv2sjaCiD1gFRrvqnqAoAw4zJo=
+			mQAqByn2/mpnXUehQ7OxXSoC35zfRSZnS3eJN15FZVU=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NgdnYSxrh6PeK6gGhLoo7wBQveo=
-			</data>
 			<key>hash2</key>
 			<data>
-			dMM4ot5QJQpoHin08d8AgDCVnxTx6+WCZ6ecJgjx01Y=
+			kmyMrlaIfpVSVrs6Dzm+PD9Gqo/jM68U3/nDLwrcqMg=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zVv5nlHQAyt5TL/E3npCP/o50r8=
-			</data>
 			<key>hash2</key>
 			<data>
-			h8sKjzizZkHOqjQXny/nHUNx+17lcZ2AjAvMTOq+IYY=
+			a66QogKYnBcCeEzxc/Pu9yao6tKuGZHhnTRkR6bGK0w=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ud448kqAUbCzGonz0xeDJ2izzXA=
-			</data>
 			<key>hash2</key>
 			<data>
-			uX70bfdcc5CylV/M8hGzdYn+hADUo836uGJ8mG+iM1U=
+			P+fJ2zF7TZnNDwi4IshWMKnSpzn2JVipj1D04vplBow=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NgdnYSxrh6PeK6gGhLoo7wBQveo=
-			</data>
 			<key>hash2</key>
 			<data>
-			dMM4ot5QJQpoHin08d8AgDCVnxTx6+WCZ6ecJgjx01Y=
+			kmyMrlaIfpVSVrs6Dzm+PD9Gqo/jM68U3/nDLwrcqMg=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zVv5nlHQAyt5TL/E3npCP/o50r8=
-			</data>
 			<key>hash2</key>
 			<data>
-			h8sKjzizZkHOqjQXny/nHUNx+17lcZ2AjAvMTOq+IYY=
+			a66QogKYnBcCeEzxc/Pu9yao6tKuGZHhnTRkR6bGK0w=
 			</data>
 		</dict>
 		<key>Modules/MaioOB.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ud448kqAUbCzGonz0xeDJ2izzXA=
-			</data>
 			<key>hash2</key>
 			<data>
-			uX70bfdcc5CylV/M8hGzdYn+hADUo836uGJ8mG+iM1U=
+			P+fJ2zF7TZnNDwi4IshWMKnSpzn2JVipj1D04vplBow=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			w738AMrWCQyla4WWMuWfnLSh7Zs=
-			</data>
 			<key>hash2</key>
 			<data>
 			tEBBhQfprIF+cBnEj25PBxrwiuodLmWBOKyoY4+9nH0=
