@@ -16,11 +16,12 @@
 アプリのinfo.plistファイルに追加してください。
 
 ```
+<key>SKAdNetworkItems</key>
 <array>
-<dict>
-<key>SKAdNetworkIdentifier</key>
-<string>v4nxqhlyqp.skadnetwork</string>
-</dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>v4nxqhlyqp.skadnetwork</string>
+    </dict>
 </array>
 ```
 
