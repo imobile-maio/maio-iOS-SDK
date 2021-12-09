@@ -3,7 +3,7 @@
 # maio iOS SDK
 - Version: 1.6.0
 - Released: 2021/12/09
-- Supported: iOS 9.0+ (Xcode 12.5+)
+- Supported: iOS 9.0+ (Xcode 13.0+)
 
 ## What is maio?
 [maio](https://maio.jp/) はこれまでのバナー広告に加え、新たな広告収益の機会を得ることが可能な動画広告プラットフォームです。
