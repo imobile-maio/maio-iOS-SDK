@@ -1,29 +1,29 @@
 #!/bin/bash
 
-echo "Start Maio.framework Update script."
+echo "Start Maio.xcframework Update script."
 
 readonly ROOT=$(cd $(dirname $0)/.. && pwd)
-readonly FRAMEWORK="$ROOT/Maio.framework"
+readonly FRAMEWORK="$ROOT/Maio.xcframework"
 echo "root: $ROOT"
 
-# 引数からMaio.frameworkを持ってくる
+# 引数からMaio.xcframeworkを持ってくる
 
-# Maio.frameworkであるかの検証
+# Maio.xcframeworkであるかの検証
 # - 指定先がディレクトリでなければダメ
 # - ディレクトリでも、Info.plistを直下に持っていなければダメ
 if [ $# -ne 1 ]; then
-    echo "argument error: 引数には差し替えるMaio.frameworkへのパスが必要です。" 1>&2
+    echo "argument error: 引数には差し替えるMaio.xcframeworkへのパスが必要です。" 1>&2
     exit 1
 fi
 if ! [ -d $1 ] || ! [ -f $1/Info.plist ]  ; then
-    echo "argument error: $1: Maio.frameworkではない可能性があります。" 1>&2
+    echo "argument error: $1: Maio.xcframeworkではない可能性があります。" 1>&2
     exit 1
 fi
 
 rm -rf $FRAMEWORK
 if ! cp -af $1 $FRAMEWORK; then
     echo "copy failded" 1>&2
-    # Maio.frameworkをリカバリーする
+    # Maio.xcframeworkをリカバリーする
     echo $(cd $ROOT && git checkout -- $FRAMEWORK)
     exit 1
 fi
@@ -49,7 +49,8 @@ readonly LATEST_VERSION=$(git tag | sort -t. -k 1.2,1n -k 2,2n -k 3,3n |tail -1)
 echo ""
 echo "latest: $LATEST_VERSION"
 
-readonly TARGET_VERSION="v$(plutil -p $FRAMEWORK/Info.plist | grep "CFBundleShortVersionString" | sed -e "s/[^0-9.]//g")"
+
+readonly TARGET_VERSION="v$(plutil -p $(find $FRAMEWORK/*/Maio.framework -name Info.plist | head -n 1) | grep "CFBundleShortVersionString" | sed -e "s/[^0-9.]//g")"
 echo "target: $TARGET_VERSION"
 
 readonly HIGHER_VERSION=$(for v in $LATEST_VERSION $TARGET_VERSION; do echo "$v"; done | sort -t. -k 1.2,1n -k 2,2n -k 3,3n |tail -1)
@@ -58,7 +59,7 @@ echo "higher: $HIGHER_VERSION"
 if [ $LATEST_VERSION == $TARGET_VERSION ] ||
    [ $HIGHER_VERSION != $TARGET_VERSION ]; then
     echo "バージョン番号を更新する必要があります。" 1>&2
-    # Maio.frameworkをリカバリーする
+    # Maio.xcframeworkをリカバリーする
     echo $(cd $ROOT && git reset HEAD $DIFF_FILENAMES) > /dev/null
     rm -rf $FRAMEWORK
     echo $(cd $ROOT && git checkout -- $FRAMEWORK)
@@ -98,7 +99,7 @@ done
 
 if [ "$key" != "y" ]; then
     echo "終了します。"
-    # Maio.frameworkをリカバリーする
+    # Maio.xcframeworkをリカバリーする
     echo $(cd $ROOT && git reset HEAD $DIFF_FILENAMES) > /dev/null
     rm -rf $FRAMEWORK
     echo $(cd $ROOT && git checkout -- $FRAMEWORK)
@@ -107,7 +108,7 @@ fi
 
 echo $(cd $ROOT && git checkout -b "release/${TARGET_VERSION}") > /dev/null
 
-echo $(cd $ROOT && git commit -m "Maio.frameworkを${TARGET_VERSION}に更新") > /dev/null
+echo $(cd $ROOT && git commit -m "Maio.xcframeworkを${TARGET_VERSION}に更新") > /dev/null
 
 readonly TODAY=$(date "+%Y/%m/%d")
 sed -i '' -E "s/(Version: ?).*$/\1${TARGET_VERSION#v}/" $ROOT/README.md
