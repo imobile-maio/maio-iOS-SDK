@@ -1,8 +1,8 @@
 ![](https://github.com/imobile-maio/maio-iOS-SDK/blob/wiki/doc/images/logo.png)
 
 # maio iOS SDK
-- Version: 1.6.2
-- Released: 2022/06/02
+- Version: 1.6.3
+- Released: 2022/10/27
 - Supported: iOS 9.0+ (Xcode 13.0+)
 
 ## What is maio?
