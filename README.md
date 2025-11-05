@@ -1,5 +1,16 @@
 ![](https://github.com/imobile-maio/maio-iOS-SDK/blob/wiki/doc/images/logo.png)
 
+> [!IMPORTANT]
+> ## maio SDK v1 サポート終了のお知らせ / maio SDK v1 End of Support Notice
+>
+> 2025年9月を以て、maio SDK v1 はサポートおよび広告の提供を終了しました。
+> [**maio SDK v2**](https://github.com/imobile/MaioSDK-v2-iOS) をご利用ください。
+>
+> As of September 2025, maio SDK v1 has ended support and ad delivery.
+> Please use [**maio SDK v2**](https://github.com/imobile/MaioSDK-v2-iOS).
+
+---
+
 # maio iOS SDK
 - Version: 1.6.5
 - Released: 2024/03/14
